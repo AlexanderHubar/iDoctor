@@ -1,0 +1,37 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: $white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  .logo {
+    a {
+      text-decoration: none;
+      color: $second-brand-color;
+      font-size: 32px;
+    }
+    span {
+      color: $brand-color;
+    }
+  }
+  .autorization {
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: $white;
+      padding: 10px 15px;
+      background-color: $brand-color;
+      margin-left: 10px;
+      border-radius: 2px;
+      transition: .2s;
+      &:hover {
+        -webkit-box-shadow: 0px 2px 0px 0px rgba(179,59,59,0.79);
+        -moz-box-shadow: 0px 2px 0px 0px rgba(179,59,59,0.79);
+        box-shadow: 0px 2px 0px 0px rgba(179,59,59,0.79);
+      }
+    }
+  }
+}
+

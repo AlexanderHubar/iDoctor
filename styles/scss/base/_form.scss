@@ -1,0 +1,31 @@
+.field,
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.item p {
+  font-size: 13px;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #575260;
+  }
+  input[type="text"],
+  input[type="password"] {
+    height: 35px;
+    width: 160px;
+    margin-bottom: 0;
+    border-radius: 3px;
+    border: 1px solid #d4d7d3;
+    &:focus {
+      border: 1px solid $brand-color;
+    }
+  }
+}
