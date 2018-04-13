@@ -1,3 +1,11 @@
 @media (min-width: 320px) and (max-width: 375px) {
+  #header {
+    .autorization-desctop {
+      display: none;
+    }
+    .mobile-autorization {
+      display: block;
+    }
+  }
 }
 

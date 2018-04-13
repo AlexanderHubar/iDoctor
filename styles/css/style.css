@@ -76,6 +76,25 @@ button:hover {
   box-shadow: 0px 2px 0px 0px rgba(179, 59, 59, 0.79);
 }
 
+.menu-button {
+  border: 2px solid #ff5a5f;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: .3s;
+}
+.menu-button i.fas {
+  color: #ff5a5f;
+  font-size: 18px;
+}
+.menu-button:hover {
+  background-color: #ff5a5f;
+}
+.menu-button:hover i.fas {
+  color: #fff;
+}
+
 .field,
 .item {
   display: flex;
@@ -114,9 +133,11 @@ button:hover {
 section {
   width: 100%;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .section-header {
+  box-sizing: border-box;
   padding: 20px 15px;
   font-size: 18px;
   background-color: #edefed;
@@ -126,6 +147,7 @@ section {
 }
 
 .section-body {
+  box-sizing: border-box;
   padding: 20px 30px;
   background-color: white;
   border: 1px solid #d4d7d3;
@@ -146,9 +168,11 @@ body {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 #header {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,7 +189,7 @@ body {
 #header .logo span {
   color: #ff5a5f;
 }
-#header .autorization a {
+#header .autorization-desctop a, #header .mobile-autorization a {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
@@ -175,8 +199,20 @@ body {
   border-radius: 2px;
   transition: .2s;
 }
-#header .autorization a:hover {
+#header .autorization-desctop a:hover, #header .mobile-autorization a:hover {
   -webkit-box-shadow: 0px 2px 0px 0px rgba(179, 59, 59, 0.79);
   -moz-box-shadow: 0px 2px 0px 0px rgba(179, 59, 59, 0.79);
   box-shadow: 0px 2px 0px 0px rgba(179, 59, 59, 0.79);
+}
+#header .mobile-autorization, #header .autorization {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  #header .autorization-desctop {
+    display: none;
+  }
+  #header .mobile-autorization {
+    display: block;
+  }
 }

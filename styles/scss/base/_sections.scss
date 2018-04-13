@@ -1,8 +1,10 @@
 section {
   width: 100%;
   padding: 20px;
+  box-sizing: border-box;
 }
 .section-header {
+  box-sizing: border-box;
   padding: 20px 15px;
   font-size: 18px;
   background-color: #edefed;
@@ -11,6 +13,7 @@ section {
   -webkit-border-top-left-radius: 3px;
 }
 .section-body {
+  box-sizing: border-box;
   padding: 20px 30px;
   background-color: white;
   border: 1px solid #d4d7d3;
@@ -29,4 +32,5 @@ body {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
