@@ -95,6 +95,10 @@ button:hover {
   color: #fff;
 }
 
+.medicament-list li {
+  line-height: 23px;
+}
+
 .field,
 .item {
   display: flex;
@@ -162,6 +166,14 @@ section {
 .section-body p {
   line-height: 23px;
 }
+.section-body p a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff5a5f;
+}
+.section-body p a:hover {
+  text-decoration: underline;
+}
 
 body {
   background-color: #edeff1;
@@ -173,6 +185,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.pharmacy-section .section-body {
+  display: flex;
+  justify-content: center;
 }
 
 #header {

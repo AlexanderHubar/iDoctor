@@ -22,6 +22,14 @@ section {
   -webkit-border-bottom-left-radius: 3px;
   p {
     line-height: 23px;
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: $brand-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 body {
@@ -33,4 +41,10 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+.pharmacy-section {
+  .section-body {
+    display: flex;
+    justify-content: center;
+  }
 }
