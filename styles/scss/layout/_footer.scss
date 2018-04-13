@@ -1,2 +1,12 @@
-.footer {
+#footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: $brand-color;
+  padding: 10px 20px;
+  p {
+    color: $white;
+  }
 }

@@ -3,3 +3,27 @@
    line-height: 23px;
   }
 }
+.social-list {
+  display: flex;
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    border-radius: 50%;
+    margin-left: 15px;
+    transition: .3s;
+    a {
+      font-size: 20px;
+      color: $second-brand-color;
+    }
+    &:hover {
+      background-color: $second-brand-color;
+      a {
+        color: $white;
+      }
+    }
+  }
+}
