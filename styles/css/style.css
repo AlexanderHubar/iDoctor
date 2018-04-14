@@ -163,6 +163,106 @@ button:hover {
   border: 1px solid #ff5a5f;
 }
 
+[Table]
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  background: #d1d1d1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 1300px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+table {
+  width: 100%;
+  background-color: #fff;
+}
+
+th, td {
+  font-weight: unset;
+  padding-right: 10px;
+}
+
+.column100 {
+  vertical-align: middle;
+  text-align: center;
+  width: 130px;
+  padding: 0 20px;
+}
+
+.column100.column1 {
+  width: 265px;
+  padding-left: 42px;
+  text-align: left;
+}
+
+.row100.head th {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.row100 td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/*==================================================================
+[ Ver1 ]*/
+.table100 {
+  width: 100%;
+  overflow: auto;
+}
+
+.table100.ver1 td {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  color: #808080;
+  line-height: 1.4;
+}
+
+.table100.ver1 th {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.4;
+  text-transform: uppercase;
+  background-color: #fa4251;
+}
+
+.table100.ver1 .row100:hover {
+  background-color: #ffebed;
+}
+
+.table100.ver1 .hov-column-ver1 {
+  background-color: #ffebed;
+}
+
+.table100.ver1 .hov-column-head-ver1 {
+  background-color: #f95462 !important;
+}
+
+.table100.ver1 .row100 td:hover {
+  background-color: #ffebed;
+  color: #fa4251;
+}
+
 section {
   width: 100%;
   padding: 20px;
@@ -173,6 +273,7 @@ section {
   box-sizing: border-box;
   padding: 20px 15px;
   font-size: 18px;
+  font-weight: bold;
   background-color: #edefed;
   border: 1px solid #d4d7d3;
   -webkit-border-top-right-radius: 3px;
@@ -214,7 +315,8 @@ body {
 
 .pharmacy-section .section-body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #header {

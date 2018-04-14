@@ -10,11 +10,14 @@
 @import "base/list";
 @import "base/navigation";
 @import "base/form";
+@import "base/table";
 
 @import "base/sections";
 @import "layout/sections/welcome";
 @import "layout/header";
 @import "layout/footer";
+
+@import "layout/pages/report";
 
 @import "layout/adaptivity/mobile(320)";
 @import "layout/adaptivity/mobile(375)";
